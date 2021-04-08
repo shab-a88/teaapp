@@ -4,7 +4,7 @@ pipeline {
 
             stage("build") {
                 steps {
-                    sh 'dotnet build teaapp/teaapp.csproj'
+                    sh 'dotnet build "$WORKSPACE/teaapp/teaapp.csproj"'
                 }
                 
             }
