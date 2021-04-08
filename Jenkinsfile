@@ -10,7 +10,10 @@ pipeline {
         }
 
         stage("build") {
-            sh 'dotnet build "$WORKSPACE"'
+            steps{
+                sh 'dotnet build "$WORKSPACE"'
+            }
+            
         }
     }
 }
